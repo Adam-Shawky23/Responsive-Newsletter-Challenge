@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Newsletter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <section class="inner_container">
+             <div class="text">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on</p>
+                <ul><li><img class="icon" src="./images/icon-list.svg"> Product discovery and building what matters</li><li><img class="icon" src="./images/icon-list.svg"> Measuring to ensure updates are a success</li>
+                <li><img class="icon" src="./images/icon-list.svg"> And much more!</li></ul>
+                <form>  
+          
+                    <label for="email">
+                      <div class="emailLabel">
+                        <p class="email">Email address</p>
+                        <p class="error">Valid email required</p>
+                      </div>
+                    </label>
+                    <input  type="text" id="email" placeholder="email@company.com" />
+                    <button type="submit">Subscribe to monthly newsletter</button>
+                  </form>
+             </div>
+             <div class="image-box">
+                <img class="image" id='sign-up' src="./images/illustration-sign-up-desktop.svg">
+             </div>
+        </div>
+        </section>
+        <section class="success_container">
+            <div class="success_inner_container">
+              <div class="content">
+                <img width="70" height="70" src="./images/icon-success.svg" alt="success-icon">
+                <h1>Thanks for subscribing!</h1>
+                <p>A confirmation email has been sent to <span class="userEmail"></span>. Please open it and click the button inside to confirm your subscription.</p>
+              </div>
+              <div class="dismiss">
+                <button type="button" class="dismissBtn">Dismiss message</button>
+              </div>
+            </div>
+            <script src="script.js"></script>
+        </section>
+    </body>
+</html>
